@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script> -->
+
+    <link rel="stylesheet" href="build/css/styles.css">
     <script src="build/js/vendor.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
     <title>Bike Locator</title>
@@ -12,16 +17,28 @@
         <label for="zip">Enter Zip code:</label>
         <input id="zip" type="text">
         <br>
-        <br>
-        <br>
         <label for="distance">Enter distance in miles from zip code proximity</label>
         <input id="distance" type="text">
         <br>
-        <br>
-        <br>
         <button type="submit" class="btn-sucess" id="button">Get Bikes!</button>
       </form>
-      <div class="showBike"></div>
+      <hr>
+      <br>
+      <br>
+      <br>
+      <div class="table-responsive">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Manufacturer</th>
+              <th>Location</th>
+              <th>Date Stolen</th>
+            </tr>
+          </thead>
+          <tbody id="showBike">
+          </tbody>
+        </table>
+      </div>
     </div>
   </body>
 </html>

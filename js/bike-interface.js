@@ -6,10 +6,9 @@ var currentBikeObject = new Bike();
 var displayBikes = function(bikes) {
   bikes.forEach(function(bike) {
     console.log(bike);
-    $("#bike").empty();
-    $('.showBike').append("<p>"+bike.manufacturer+"</p>" +
-                          "<p>"+bike.location+"</p>" +
-                          "<p>"+bike.date+"</p>");
+    $('#showBike').append("<tr>"+"<td>"+bike.manufacturer+"</td>" +
+                          "<td>"+bike.location+"</td>" +
+                          "<td>"+bike.date+"</td>"+"</tr>");
   });
 };
 
