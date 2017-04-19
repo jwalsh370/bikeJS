@@ -11,7 +11,7 @@ var browserSync = require('browser-sync').create();
 
 
 gulp.task('concatInterface', function() {
-  return gulp.src(['./js/foodCart-interface.js'])
+  return gulp.src(['./js/bike-interface.js'])
     .pipe(concat('allConcat.js'))
     .pipe(gulp.dest('./tmp'));
 });
